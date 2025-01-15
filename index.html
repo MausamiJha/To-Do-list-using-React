@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoIt - To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DoIt</h1>
+        </header>
+        <main>
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Add A Task">
+                <select id="prioritySelect">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <section class="task-section">
+                <h2>To Do</h2>
+                <ul id="taskList"></ul>
+            </section>
+            <section class="completed-section">
+                <h2>Completed</h2>
+                <ul id="completedList"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
